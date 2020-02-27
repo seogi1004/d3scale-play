@@ -8,7 +8,7 @@ module.exports = (env) => {
     return {
         mode: !env ? 'development' : env,
         entry: {
-            vendors: [ 'd3-scale' ],
+            vendors: [ 'd3-scale', 'konva' ],
             app: clientPath + '/index.js'
         },
         output: {
