@@ -1,3 +1,13 @@
 .App {
-  text-align: center;
+  padding: 36px;
+}
+
+.colors {
+  display: flex;
+}
+
+.colors > .color {
+  display: inline-flex;
+  width: 10px;
+  height: 100px;
 }
