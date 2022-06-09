@@ -1,5 +1,6 @@
 .App {
   padding: 36px;
+  background-color: #fffff0;
 }
 
 .colors {
@@ -10,4 +11,19 @@
   display: inline-flex;
   width: 10px;
   height: 100px;
+}
+
+.box-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  height: 150px;
+}
+
+.box-list > .box {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  background-color: gray;
 }

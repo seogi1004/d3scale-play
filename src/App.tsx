@@ -4,12 +4,13 @@ import Power from './scale/Power';
 import Sequential from './scale/Sequential';
 import Diverging from './scale/Diverging';
 import Radial from './scale/Radial';
+import Threshold from './scale/Threshold';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Radial />
+      <Threshold />
     </div>
   );
 }
