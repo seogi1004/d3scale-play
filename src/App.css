@@ -45,6 +45,18 @@
   background-color: gray;
 }
 
+.column-list {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background-color: #dcdcdc;
+}
+
+.column-list > .column {
+  position: absolute;
+  height: 100%;
+}
+
 .timeline {
   position: relative;
   width: 600px;
