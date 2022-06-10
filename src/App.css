@@ -57,6 +57,20 @@
   height: 100%;
 }
 
+.point-list {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background-color: #dcdcdc;
+}
+
+.point-list > .point {
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  background-color: #00d3d3;
+}
+
 .timeline {
   position: relative;
   width: 600px;

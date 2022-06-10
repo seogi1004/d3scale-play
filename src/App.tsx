@@ -11,12 +11,13 @@ import Ordinal from './scale/Ordinal';
 import Log from './scale/Log';
 import Time from './scale/Time';
 import Band from './scale/Band';
+import Point from './scale/Point';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Band />
+      <Point />
     </div>
   );
 }

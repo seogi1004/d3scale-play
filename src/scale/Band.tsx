@@ -11,7 +11,11 @@ const func1 = scaleBand<number>().domain(domain).range(range);
 
 const func2 = scaleBand<number>().domain(domain).range(range).paddingInner(0.6);
 
-const func3 = scaleBand<number>().domain(domain).range(range).paddingOuter(0.2);
+const func3 = scaleBand<number>()
+  .domain(domain)
+  .range(range)
+  .paddingOuter(0.2)
+  .align(0.5); // 0이면 맨 왼쪽으로 당김
 
 export default function Scale() {
   return (
