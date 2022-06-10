@@ -1,9 +1,9 @@
 import { scaleDiverging } from 'd3-scale';
 import { interpolateRdBu } from 'd3-scale-chromatic';
 
-export default function Scale() {
-  const func = scaleDiverging((t) => interpolateRdBu(t)).domain([-50, 0, 50]);
+const func = scaleDiverging((t) => interpolateRdBu(t)).domain([-50, 0, 50]);
 
+export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleDiverging</h1>

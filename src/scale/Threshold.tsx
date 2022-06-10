@@ -5,7 +5,7 @@ import {
   scaleQuantile,
 } from 'd3-scale';
 import { max, extent } from 'd3-array';
-import { sampleData } from './data';
+import { sampleData } from './data/threshold';
 
 const linear = scaleLinear<string>()
   .domain([0, max(sampleData) || 0])
