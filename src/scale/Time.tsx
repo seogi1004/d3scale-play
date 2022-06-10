@@ -18,6 +18,7 @@ const axisData = func.ticks().map((date) => {
 
 export default function Scale() {
   const [current, setCurrent] = useState<Date>(end);
+
   const onMouseMove = (e: MouseEvent) => {
     const offsetX = e.clientX - 36;
     const range = func.range();
@@ -30,8 +31,8 @@ export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleTime</h1>
-      <div className="timeline">
-        <div className="container" onMouseMove={onMouseMove}>
+      <div className="timeline" onMouseMove={onMouseMove}>
+        <div className="container">
           {axisData.map((data, index) => {
             return (
               <div className="line" key={index} style={{ left: data.left }} />

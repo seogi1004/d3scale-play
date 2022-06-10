@@ -3,6 +3,10 @@
   background-color: #fffff0;
 }
 
+.scale {
+  margin-bottom: 120px;
+}
+
 .colors {
   display: flex;
 }
