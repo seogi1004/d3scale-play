@@ -5,12 +5,13 @@ import Sequential from './scale/Sequential';
 import Diverging from './scale/Diverging';
 import Radial from './scale/Radial';
 import Threshold from './scale/Threshold';
+import Log from './scale/Log';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Sequential />
+      <Log />
     </div>
   );
 }

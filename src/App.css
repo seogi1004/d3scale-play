@@ -27,3 +27,16 @@
   border: 1px solid #dcdcdc;
   background-color: gray;
 }
+
+.bar-list {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+}
+
+.bar-list > .bar {
+  display: inline-flex;
+  height: 10px;
+  border: 1px solid #dcdcdc;
+  background-color: gray;
+}
