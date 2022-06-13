@@ -1,4 +1,5 @@
 import { scaleBand, scaleOrdinal } from 'd3-scale';
+import Image from '../images/scaleBand.png';
 
 const domain = [0, 1, 2, 3];
 const range = [0, 400];
@@ -21,6 +22,10 @@ export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleBand</h1>
+      <div className="description">
+        <img src={Image} />
+      </div>
+
       <h3>
         no padding <small>(step:{func1.step()})</small>
       </h3>

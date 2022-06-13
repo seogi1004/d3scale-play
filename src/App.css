@@ -1,10 +1,28 @@
 .App {
   padding: 36px;
-  background-color: #fffff0;
+  background-color: #fff;
 }
 
-.scale {
+.scale, .doc {
   margin-bottom: 120px;
+}
+
+.description {
+  max-width: 640px;
+  margin-bottom: 36px;
+  color: #1c1c1c;
+}
+
+.description > img {
+  width: 100%;
+}
+
+.formula {
+  color: #a9a9a9;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -24px;
+  margin-bottom: 24px;
 }
 
 .colors {
@@ -13,7 +31,7 @@
 
 .colors > .color {
   display: inline-flex;
-  width: 10px;
+  width: 6px;
   height: 100px;
 }
 

@@ -33,6 +33,14 @@ export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleLinear</h1>
+
+      <div className="description">
+        가장 보편적으로 사용하는 스케일이며, 다른 스케일과 마찬가지로
+        domain(정의역)과 range(치역)만 기억하면 됩니다. domain은 입력 값,
+        range는 입력 값에 대응하는 출력 값입니다. invert는 반대로 출력 값을 입력
+        값으로 넣으면 원래의 입력 값을 반환하는 역함수입니다.
+      </div>
+      <div className="formula">y = mx * b</div>
       <h3>
         domain(0, 10) -&gt; range(0, 80)
         <br />

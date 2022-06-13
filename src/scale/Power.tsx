@@ -4,6 +4,7 @@ import type { Pair } from '../types';
 export default function PowerScale() {
   const DOMAIN: Pair = [0, 100];
   const RANGE: Pair = [10, 50];
+  const RANGE_COLORS = ['yellow', 'red'];
 
   // func1(Math.pow(50, exponent) / Math.pow(100, exponent - 1))
   // func1(50 ** exponent / 100 ** (exponent - 1))
@@ -13,6 +14,17 @@ export default function PowerScale() {
   const func21 = scalePow().exponent(0.5).domain(DOMAIN).range(RANGE);
   const func22 = scaleSqrt().domain(DOMAIN).range(RANGE);
   const func23 = scalePow().exponent(2).domain(DOMAIN).range(RANGE);
+
+  // colors
+  const color1 = scaleLinear<string>().domain(DOMAIN).range(RANGE_COLORS);
+  const color21 = scalePow<string>()
+    .exponent(0.5)
+    .domain(DOMAIN)
+    .range(RANGE_COLORS);
+  const color22 = scalePow<string>()
+    .exponent(2)
+    .domain(DOMAIN)
+    .range(RANGE_COLORS);
 
   const chartData = [0, 25, 50, 75, 100];
 
@@ -86,6 +98,42 @@ export default function PowerScale() {
             />
           );
         })}
+      </div>
+      <h3>linear colors</h3>
+      <div className="colors">
+        {Array(100)
+          .fill(0)
+          .map((val, i) => (
+            <div
+              className="color"
+              key={i}
+              style={{ backgroundColor: color1(i) }}
+            />
+          ))}
+      </div>
+      <h3>sqrt or exponent(0.5) colors</h3>
+      <div className="colors">
+        {Array(100)
+          .fill(0)
+          .map((val, i) => (
+            <div
+              className="color"
+              key={i}
+              style={{ backgroundColor: color21(i) }}
+            />
+          ))}
+      </div>
+      <h3>exponent(2) colors</h3>
+      <div className="colors">
+        {Array(100)
+          .fill(0)
+          .map((val, i) => (
+            <div
+              className="color"
+              key={i}
+              style={{ backgroundColor: color22(i) }}
+            />
+          ))}
       </div>
     </div>
   );

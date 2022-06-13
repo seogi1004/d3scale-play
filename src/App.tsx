@@ -12,11 +12,13 @@ import Log from './scale/Log';
 import Time from './scale/Time';
 import Band from './scale/Band';
 import Point from './scale/Point';
+import Doc from './Doc';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Doc />
       <Linear />
       <Power />
       <Log />
