@@ -57,6 +57,14 @@
   height: 100%;
 }
 
+.column-list > .tick {
+  position: absolute;
+  left: -20px;
+  font-size: 12px;
+  text-align: right;
+  width: 16px;
+}
+
 .point-list {
   position: relative;
   width: 400px;
