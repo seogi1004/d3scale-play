@@ -20,8 +20,9 @@ export default function PowerScale() {
     <div className="scale">
       <h1>scalePower</h1>
       <h3>
-        domain(0, 100) -&gt; range(10, 50) :&nbsp;
-        <small>data(0, 25, 50, 75, 100)</small>
+        domain(0, 100) -&gt; range(10, 50)
+        <br />
+        <small>data : [0, 25, 50, 75, 100]</small>
       </h3>
       <div className="point-list flex">
         {chartData.map((value, index) => {

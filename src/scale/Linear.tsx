@@ -34,8 +34,9 @@ export default function Scale() {
     <div className="scale">
       <h1>scaleLinear</h1>
       <h3>
-        domain(0, 10) -&gt; range(0, 80) : &nbsp;
-        <small>data(2, 5, 6, 15)</small>
+        domain(0, 10) -&gt; range(0, 80)
+        <br />
+        <small>data : [2, 5, 6, 15]</small>
       </h3>
       <div className="column-list">
         {chartData.map((value, index) => {
