@@ -31,11 +31,24 @@ export default function PowerScale() {
   return (
     <div className="scale">
       <h1>scalePower</h1>
-      <h3>
-        domain(0, 100) -&gt; range(10, 50)
+
+      <div className="description">...</div>
+
+      <div className="formula">y = mx^k + b</div>
+
+      <pre>
+        const func = scaleLinear().domain([0, 100]).range([10, 50]); <br />
+        func(0); // return 10;
         <br />
-        <small>data : [0, 25, 50, 75, 100]</small>
-      </h3>
+        func(25); // return 20;
+        <br />
+        func(50); // return 30
+        <br />
+        func(75); // return 40
+        <br />
+        func(100); // return 50
+      </pre>
+
       <div className="point-list flex">
         {chartData.map((value, index) => {
           return (
@@ -99,7 +112,17 @@ export default function PowerScale() {
           );
         })}
       </div>
+
       <h3>linear colors</h3>
+
+      <pre>
+        const func = scaleLinear&lt;string&gt;().domain([0,
+        100]).range(['yellow', 'red']); <br />
+        func(0); // return 'rgb(255, 255, 0)'; <br />
+        ...
+        <br />
+        func(100); // return 'rgb(255, 3, 0)';
+      </pre>
       <div className="colors">
         {Array(100)
           .fill(0)

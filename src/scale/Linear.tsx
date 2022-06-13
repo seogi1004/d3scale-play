@@ -40,12 +40,19 @@ export default function Scale() {
         range는 입력 값에 대응하는 출력 값입니다. invert는 반대로 출력 값을 입력
         값으로 넣으면 원래의 입력 값을 반환하는 역함수입니다.
       </div>
-      <div className="formula">y = mx * b</div>
-      <h3>
-        domain(0, 10) -&gt; range(0, 80)
+      <div className="formula">y = mx + b</div>
+
+      <pre>
+        const func = scaleLinear().domain([0, 10]).range([0, 80]); <br />
+        func(2); // return 16;
         <br />
-        <small>data : [2, 5, 6, 15]</small>
-      </h3>
+        func(5); // return 40;
+        <br />
+        func(6); // return 48
+        <br />
+        func(15); // return 120
+      </pre>
+
       <div className="column-list">
         {chartData.map((value, index) => {
           return (
