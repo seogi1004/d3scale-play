@@ -33,7 +33,7 @@ export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleLinear</h1>
-      <h3>domain(2, 5, 6, 15) -&gt; range(0, 80)</h3>
+      <h3>domain(2, 5, 6, 10) -&gt; range(0, 80)</h3>
       <div className="column-list">
         {chartData.map((value, index) => {
           return (
