@@ -14,7 +14,8 @@ const threshold = scaleThreshold<number, string>()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleLinear</h1>
+      <h1>scaleThreshold</h1>
+      <h3>linear</h3>
       <div className="box-list">
         {sampleData.map((value, index) => {
           return (
@@ -27,7 +28,7 @@ export default function Scale() {
           );
         })}
       </div>
-      <h1>scaleThreshold</h1>
+      <h3>threshold</h3>
       <div className="box-list">
         {sampleData.map((value, index) => {
           return (

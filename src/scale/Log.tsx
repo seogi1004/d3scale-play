@@ -20,7 +20,8 @@ const linear = scaleLinear()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleLinear</h1>
+      <h1>scaleLog</h1>
+      <h3>linear</h3>
       <div className="bar-list">
         {data.map((value, index) => {
           return (
@@ -34,7 +35,7 @@ export default function Scale() {
           );
         })}
       </div>
-      <h1>scaleLog</h1>
+      <h3>log</h3>
       <div className="bar-list">
         {data.map((value, index) => {
           return (

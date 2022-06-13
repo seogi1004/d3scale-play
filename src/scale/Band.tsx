@@ -22,7 +22,7 @@ export default function Scale() {
     <div className="scale">
       <h1>scaleBand</h1>
       <h3>
-        No padding <small>(step:{func1.step()})</small>
+        no padding <small>(step:{func1.step()})</small>
       </h3>
       <div className="column-list">
         {domain.map((seq) => {
@@ -40,7 +40,7 @@ export default function Scale() {
         })}
       </div>
       <h3>
-        Inner padding <small>(step:{func2.step()})</small>
+        inner padding <small>(step:{func2.step()})</small>
       </h3>
       <div className="column-list">
         {domain.map((seq) => {
@@ -58,7 +58,7 @@ export default function Scale() {
         })}
       </div>
       <h3>
-        Outer padding <small>(step:{func3.step()})</small>
+        outer padding <small>(step:{func3.step()})</small>
       </h3>
       <div className="column-list">
         {domain.map((seq) => {

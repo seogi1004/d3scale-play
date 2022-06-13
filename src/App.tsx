@@ -19,7 +19,17 @@ function App() {
     <div className="App">
       <Linear />
       <Power />
+      <Log />
       <Band />
+      <Point />
+      <Time />
+      <Sequential />
+      <Diverging />
+      <Radial />
+      <Ordinal />
+      <Threshold />
+      <Quantile />
+      <Quantize />
     </div>
   );
 }

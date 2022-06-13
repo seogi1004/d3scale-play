@@ -10,9 +10,9 @@ const func2 = scalePoint<number>().domain(domain).range(range).padding(0.1);
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleBand</h1>
+      <h1>scalePoint</h1>
       <h3>
-        No padding <small>(step:{func1.step()})</small>
+        no padding <small>(step:{func1.step()})</small>
       </h3>
       <div className="point-list">
         {domain.map((value) => {
@@ -32,7 +32,7 @@ export default function Scale() {
       </div>
 
       <h3>
-        Padding <small>(step:{func2.step()})</small>
+        padding <small>(step:{func2.step()})</small>
       </h3>
       <div className="point-list">
         {domain.map((value) => {
