@@ -32,7 +32,10 @@ export default function PowerScale() {
     <div className="scale">
       <h1>scalePower</h1>
 
-      <div className="description">...</div>
+      <div className="description">
+        결과 값을 보간하기 위해 제공되는 함수이며, 거듭제곱(exponent)에 따라
+        결과 값을 서서히 늘리거나 줄일 수 있습니다.
+      </div>
 
       <div className="formula">y = mx^k + b</div>
 
