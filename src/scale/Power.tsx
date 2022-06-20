@@ -33,11 +33,16 @@ export default function PowerScale() {
       <h1>scalePower</h1>
 
       <div className="description">
-        결과 값을 보간하기 위해 제공되는 함수이며, 거듭제곱(exponent)에 따라
-        결과 값을 서서히 늘리거나 줄일 수 있습니다.
+        결과 값을 보간하기 위해 제공되는 함수이며, 지수(exponent)에 따라 결과
+        값을 서서히 늘리거나 줄일 수 있습니다.
       </div>
 
       <div className="formula">y = mx^k + b</div>
+
+      <div className="tip">
+        거듭제곱을 하다보면 기하급수적으로 값이 커지기 때문에 D3 스케일에서는
+        별도의 보정을 하는 것 같습니다.
+      </div>
 
       <pre>
         const func = scaleLinear().domain([0, 100]).range([10, 50]); <br />
