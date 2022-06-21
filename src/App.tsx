@@ -12,13 +12,14 @@ import Log from './scale/Log';
 import Time from './scale/Time';
 import Band from './scale/Band';
 import Point from './scale/Point';
-import Doc from './Doc';
+import Summary from './Summary';
+import Result from './Result';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Doc />
+      <Summary />
       <Linear />
       <Power />
       <Log />
@@ -32,6 +33,7 @@ function App() {
       <Threshold />
       <Quantile />
       <Quantize />
+      <Result />
     </div>
   );
 }
