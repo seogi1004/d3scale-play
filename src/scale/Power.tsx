@@ -41,7 +41,8 @@ export default function PowerScale() {
 
       <div className="tip">
         거듭제곱을 하다보면 기하급수적으로 값이 커지기 때문에 D3 스케일에서는
-        별도의 보정을 하는 것 같습니다.
+        domain 범위에 맞게 별도의 보정을 합니다. (Math.pow(입력값, exponent) /
+        Math.pow(최대값, exponent - 1))
       </div>
 
       <pre>
@@ -121,8 +122,12 @@ export default function PowerScale() {
         })}
       </div>
 
+      <br />
       <h3>linear colors</h3>
-
+      <div className="description">
+        수치보다는 색상에 대한 변화가 Power 스케일을 이해하는데 도움이 되리라
+        생각합니다.
+      </div>
       <pre>
         const func = scaleLinear&lt;string&gt;().domain([0,
         100]).range(['yellow', 'red']); <br />
