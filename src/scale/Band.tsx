@@ -23,9 +23,26 @@ export default function Scale() {
     <div className="scale">
       <h1>scaleBand</h1>
       <div className="description">
+        Linear 스케일과 비슷하게 동작하지만 Domain 사이에 여백(padding)을 비율로
+        설정할 수 있으며, 일반적으로 바나 컬럼 차트를 구현할 때, 사용하는
+        목적으로 만들어졌습니다.
+        <br />
+        <br />
         <img src={Image} />
       </div>
-
+      <pre>
+        const domain = [0, 1, 2, 3]; <br />
+        const range = [0, 400]; <br />
+        const func1 = scaleBand&lt;number&gt;().domain(domain).range(range);
+        <br />
+        const func2 = scaleBand&lt;number&gt;().domain(domain).range(range)
+        <br />
+        .paddingInner(0.6);
+        <br />
+        const func3 = scaleBand&lt;number&gt;().domain(domain).range(range)
+        <br />
+        .paddingOuter(0.2).align(0.5); // 0이면 맨 왼쪽으로 당김
+      </pre>
       <h3>
         no padding <small>(step:{func1.step()})</small>
       </h3>
