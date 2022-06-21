@@ -8,7 +8,7 @@ const func = scaleSequential()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleSequential</h1>
+      <h1>scaleSequential (연속)</h1>
       <div className="colors">
         {Array(100)
           .fill(0)

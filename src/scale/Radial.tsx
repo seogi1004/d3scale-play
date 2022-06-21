@@ -61,7 +61,7 @@ export default function Scale() {
 
   return (
     <div className="scale">
-      <h1>scaleRadial</h1>
+      <h1>scaleRadial (방사형)</h1>
       <svg width={width} height={height} xmlns="http://www.w3.org/2000/svg">
         {newData.map((data, index) => {
           return (

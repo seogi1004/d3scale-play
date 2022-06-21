@@ -30,7 +30,7 @@ export default function PowerScale() {
 
   return (
     <div className="scale">
-      <h1>scalePower</h1>
+      <h1>scalePower (지수)</h1>
 
       <div className="description">
         결과 값을 보간하기 위해 제공되는 함수이며, 지수(exponent)에 따라 결과

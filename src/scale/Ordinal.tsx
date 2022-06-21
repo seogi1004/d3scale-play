@@ -9,7 +9,7 @@ const func = scaleOrdinal<number, string>()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleOrdinal</h1>
+      <h1>scaleOrdinal (서수)</h1>
       <div className="box-list">
         {sampleData.map((value, index) => {
           return (

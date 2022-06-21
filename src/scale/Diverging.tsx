@@ -6,7 +6,7 @@ const func = scaleDiverging((t) => interpolateRdBu(t)).domain([-50, 0, 50]);
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleDiverging</h1>
+      <h1>scaleDiverging (양방향)</h1>
       <div className="colors">
         {Array(101)
           .fill(0)

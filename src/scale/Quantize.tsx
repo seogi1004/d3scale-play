@@ -15,7 +15,7 @@ const quantize = scaleQuantize<string>()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleQuantize</h1>
+      <h1>scaleQuantize (양자화)</h1>
       <h3>linear</h3>
       <div className="box-list">
         {sampleData.map((value, index) => {

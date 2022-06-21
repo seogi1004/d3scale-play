@@ -14,7 +14,7 @@ const quantile = scaleQuantile<string>()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleQuantile</h1>
+      <h1>scaleQuantile (분위수)</h1>
       <h3>linear</h3>
       <div className="box-list">
         {sampleData.map((value, index) => {

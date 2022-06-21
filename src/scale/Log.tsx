@@ -20,7 +20,7 @@ const linear = scaleLinear()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleLog</h1>
+      <h1>scaleLog (로그)</h1>
       <div className="description">
         최대값이 극단적으로 클 경우, 결과값의 분포를 비교적 완만하게 보정해주는
         스케일입니다.

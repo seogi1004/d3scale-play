@@ -30,7 +30,7 @@ export default function Scale() {
 
   return (
     <div className="scale">
-      <h1>scaleTime</h1>
+      <h1>scaleTime (시간)</h1>
       <div className="description">
         Linear 스케일과 동일하지만 Domain 범위를 Date 객체로 정할 수 있습니다.
         앞에서 설명한 ticks 함수를 사용하여 X축을 구현하고, 마우스 오버시

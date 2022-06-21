@@ -32,7 +32,7 @@ export default function Scale() {
 
   return (
     <div className="scale">
-      <h1>scaleLinear</h1>
+      <h1>scaleLinear (선형)</h1>
 
       <div className="description">
         가장 보편적으로 사용하는 스케일이며, 다른 스케일과 마찬가지로

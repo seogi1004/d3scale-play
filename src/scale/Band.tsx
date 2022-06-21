@@ -21,7 +21,7 @@ const func3 = scaleBand<number>()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleBand</h1>
+      <h1>scaleBand (밴드)</h1>
       <div className="description">
         Linear 스케일과 비슷하게 동작하지만 Domain 사이에 여백(padding)을 비율로
         설정할 수 있으며, 일반적으로 바나 컬럼 차트를 구현할 때, 사용하는
