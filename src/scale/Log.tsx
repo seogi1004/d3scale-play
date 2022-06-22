@@ -1,4 +1,4 @@
-import { scaleLog, scaleLinear } from 'd3-scale';
+import { scaleLog, scaleSymlog, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
 
 const data = [
@@ -20,10 +20,13 @@ const linear = scaleLinear()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleLog (로그)</h1>
+      <h1>scaleLog, scaleSymlog (로그)</h1>
       <div className="description">
         최대값이 극단적으로 클 경우, 결과값의 분포를 비교적 완만하게 보정해주는
         스케일입니다.
+      </div>
+      <div className="tip">
+        Symlog 함수는 대칭 로그를 의미하며, 양수 및 음수 값을 허용합니다.
       </div>
       <div className="formula">y = mlog(x) + b</div>
       <pre>const data = [ 10, 100, 10000, 1000000 ];</pre>
