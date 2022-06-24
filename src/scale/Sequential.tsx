@@ -27,6 +27,14 @@ export default function Scale() {
         scaleSequentialSymlog, scaleSequentialPow, scaleSequentialSqrt,
         scaleSequentialQuantile)
       </div>
+      <pre>
+        import {'{ interpolateRainbow }'} from 'd3-scale-chromatic';
+        <br />
+        <br />
+        const func = scaleSequential() .domain([0, 100])
+        <br />
+        .interpolator(interpolateRainbow);
+      </pre>
       <div className="colors">
         {Array(100)
           .fill(0)

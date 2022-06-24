@@ -1,9 +1,8 @@
 import { scaleLinear, scalePow, scaleSqrt } from 'd3-scale';
-import type { Pair } from '../types';
 
 export default function PowerScale() {
-  const DOMAIN: Pair = [0, 100];
-  const RANGE: Pair = [10, 50];
+  const DOMAIN = [0, 100];
+  const RANGE = [10, 50];
   const RANGE_COLORS = ['yellow', 'red'];
 
   // func1(Math.pow(50, exponent) / Math.pow(100, exponent - 1))

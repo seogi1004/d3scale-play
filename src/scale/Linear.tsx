@@ -1,9 +1,8 @@
 import type { MouseEvent } from 'react';
-import type { Pair } from '../types';
 import { useState } from 'react';
 import { scaleLinear } from 'd3-scale';
 
-function tempScaleLinear(domain: Pair, range: Pair) {
+function tempScaleLinear(domain: [number, number], range: [number, number]) {
   const a = domain[1] - domain[0];
   const b = range[1] - range[0];
   return function (x: number) {
@@ -12,8 +11,8 @@ function tempScaleLinear(domain: Pair, range: Pair) {
 }
 
 export default function Scale() {
-  const DOMAIN: Pair = [0, 10];
-  const RANGE: Pair = [0, 80];
+  const DOMAIN = [0, 10];
+  const RANGE = [0, 80];
 
   const chartData = [2, 5, 6, 15];
   const chartWidth = 100;
