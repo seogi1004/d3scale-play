@@ -14,8 +14,16 @@ const threshold = scaleThreshold<number, string>()
 export default function Scale() {
   return (
     <div className="scale">
-      <h1>scaleThreshold (한계점)</h1>
+      <h1>scaleThreshold (임계점)</h1>
+      <div className="description">
+        결과 값을 구분하는 절단 값을 직접 지정할 수 있습니다.
+      </div>
       <h3>linear</h3>
+      <pre>
+        const linear = scaleLinear{'<'}string{'>'}() .domain([0, 100000])
+        <br />
+        .range(['white', 'red']);
+      </pre>
       <div className="box-list">
         {sampleData.map((value, index) => {
           return (
@@ -29,6 +37,15 @@ export default function Scale() {
         })}
       </div>
       <h3>threshold</h3>
+      <pre>
+        // 10000보다 작으면 white, 100000보다 크면 red, 나머지는 pink로 구분
+        <br />
+        <br />
+        const linear = scaleThreshold{'<'}number, string{'>'}() .domain([10000,
+        100000])
+        <br />
+        .range(['white', 'pink', 'red']);
+      </pre>
       <div className="box-list">
         {sampleData.map((value, index) => {
           return (
