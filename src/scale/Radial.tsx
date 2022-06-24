@@ -41,10 +41,10 @@ export function getPoints(
 
 export default function Scale() {
   const x = scaleBand()
+    .domain(data.map((row) => row.name))
     .range([0, 2 * Math.PI])
-    .align(0)
-    .domain(data.map((row) => row.name));
-  const y = scaleRadial().range([innerRadius, outerRadius]).domain([0, 1000]);
+    .align(0);
+  const y = scaleRadial().domain([0, 1000]).range([innerRadius, outerRadius]);
   const z = scaleSequential()
     .domain([0, 2 * Math.PI])
     .interpolator(interpolateRainbow);
@@ -62,6 +62,28 @@ export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleRadial (방사형)</h1>
+      <div className="description">
+        입력 값이 제곱된 출력 값에 선형적으로 대응하도록 범위가 내부적으로
+        제곱되는 Linear 스케일의 변형입니다.
+      </div>
+      <pre>
+        const innerRadius = 80;
+        <br />
+        const outerRadius = 220;
+        <br />
+        <br />
+        const x = scaleBand() .domain(data.map((row) {'=>'} row.name))
+        <br />
+        .range([0, 2 * Math.PI]); <br />
+        <br />
+        const y = scaleRadial().domain([0, 1000])
+        <br />
+        .range([innerRadius, outerRadius]); <br />
+        <br />
+        const z = scaleSequential() .domain([0, 2 * Math.PI])
+        <br />
+        .interpolator(interpolateRainbow);
+      </pre>
       <svg width={width} height={height} xmlns="http://www.w3.org/2000/svg">
         {newData.map((data, index) => {
           return (

@@ -10,8 +10,8 @@ export default function Scale() {
     <div className="scale">
       <h1>scaleDiverging (양방향)</h1>
       <div className="description">
-        양방향 스케일은 양수와 음수, 위쪽과 아래쪽의 두가지 반대 방향으로
-        진행되는 현상을 시각화하는데 도움이 됩니다.
+        양수와 음수, 위쪽과 아래쪽의 두가지 반대 방향으로 진행되는 현상을
+        시각화하는데 도움이 됩니다.
       </div>
       <pre>
         import {'{ interpolateRdBu }'} from 'd3-scale-chromatic';
