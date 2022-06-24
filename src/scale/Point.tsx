@@ -13,8 +13,8 @@ export default function Scale() {
     <div className="scale">
       <h1>scalePoint (점)</h1>
       <div className="description">
-        Band 스케일과 달리 Domain 개별로 여백이 적용되며, bandwidth 개념이 없고,
-        (최대 Range / Domain 개수)로 시작점을 정합니다.
+        Band 스케일과 달리 domain 개별로 여백이 적용되며, bandwidth 개념이 없고,
+        (최대 range/domain 수)로 시작점을 정합니다.
         <br />
         <br />
         <img src={Image} />

@@ -23,7 +23,7 @@ export default function Scale() {
     <div className="scale">
       <h1>scaleBand (밴드)</h1>
       <div className="description">
-        Linear 스케일과 비슷하게 동작하지만 Domain 사이에 여백(padding)을 비율로
+        Linear 스케일과 비슷하게 동작하지만 domain 사이에 여백(padding)을 비율로
         설정할 수 있으며, 일반적으로 바나 컬럼 차트를 구현할 때, 사용하는
         목적으로 만들어졌습니다.
         <br />
