@@ -16,7 +16,7 @@ export default function Scale() {
     <div className="scale">
       <h1>scaleThreshold (임계점)</h1>
       <div className="description">
-        결과 값을 구분하는 절단 값을 직접 지정할 수 있습니다.
+        결과 값을 구분하는 절단 값(=domain)을 직접 지정할 수 있습니다.
       </div>
       <h3>linear</h3>
       <pre>

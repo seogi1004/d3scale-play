@@ -16,6 +16,10 @@ export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleQuantize (양자화)</h1>
+      <div className="description">
+        domain 범위에서 임계값 선택을 처리하고, range에 정의된 값들의 수만큼
+        규칙적인 간격으로 세분화합니다.
+      </div>
       <h3>linear</h3>
       <div className="box-list">
         {sampleData.map((value, index) => {
@@ -30,6 +34,15 @@ export default function Scale() {
         })}
       </div>
       <h3>quantize</h3>
+      <pre>
+        // 0~100192 white, 100193~200384 pink, 200385~300577 red
+        <br />
+        <br />
+        const quantize = scaleQuantize{'<'}
+        string{'>'}() .domain([0, 300577])
+        <br />
+        .range(['white', 'pink', 'red']);
+      </pre>
       <div className="box-list">
         {sampleData.map((value, index) => {
           return (

@@ -15,6 +15,10 @@ export default function Scale() {
   return (
     <div className="scale">
       <h1>scaleQuantile (분위수)</h1>
+      <div className="description">
+        domain을 동일한 절대 빈도의 간격으로 분할합니다. 분할 수는 range에
+        정의된 값들의 수와 같습니다.
+      </div>
       <h3>linear</h3>
       <div className="box-list">
         {sampleData.map((value, index) => {
@@ -29,6 +33,18 @@ export default function Scale() {
         })}
       </div>
       <h3>quantile</h3>
+      <pre>
+        // 100개의 데이터를 균등하게 나눠서 값의 크기에 맞게 분류함
+        <br />
+        <br />
+        const sampleData: number[] = [ 11002, 29017, 21699, 47058, 24001, 6000,
+        ... ];
+        <br />
+        const quantile = scaleQuantile{'<'}
+        string{'>'}() .domain(sampleData)
+        <br />
+        .range(['white', 'pink', 'red']);
+      </pre>
       <div className="box-list">
         {sampleData.map((value, index) => {
           return (
